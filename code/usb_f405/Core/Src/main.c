@@ -223,7 +223,7 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
-
+//error handler
   }
   /* USER CODE END Error_Handler_Debug */
 }
