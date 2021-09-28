@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_C_Plug P1
+L usb_kb-rescue:USB_C_Plug-Connector P1
 U 1 1 6152BA8E
 P 2100 3100
 F 0 "P1" H 2207 4367 50  0000 C CNN
@@ -25,12 +25,12 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2250 31
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power_Protection:USBLC6-2SC6 U2
+L usb_kb-rescue:USBLC6-2SC6-Power_Protection U2
 U 1 1 6153205F
 P 4550 2700
 F 0 "U2" H 4550 3381 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 4550 3290 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3800 3100 50  0001 C CNN
+F 1 "AMS1117-3.3" H 4550 3290 50  0000 C CNN
+F 2 "" H 3800 3100 50  0001 C CNN
 F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 4750 3050 50  0001 C CNN
 	1    4550 2700
 	0    -1   -1   0   
@@ -177,4 +177,138 @@ Wire Wire Line
 	9350 4250 9650 4250
 Wire Wire Line
 	9350 4350 9650 4350
+$Comp
+L Regulator_Linear:AMS1117-3.3 U3
+U 1 1 61540709
+P 4650 4450
+F 0 "U3" H 4650 4700 50  0000 C CNN
+F 1 "AMS1117-3.3" H 4650 4601 50  0000 C CNN
+F 2 "Package_SIP:SIP3_11.6x8.5mm" H 4650 4650 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 4750 4200 50  0001 C CNN
+	1    4650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 61555A0F
+P 4650 4750
+F 0 "#PWR0104" H 4650 4500 50  0001 C CNN
+F 1 "GND" H 4655 4577 50  0000 C CNN
+F 2 "" H 4650 4750 50  0001 C CNN
+F 3 "" H 4650 4750 50  0001 C CNN
+	1    4650 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 6155652B
+P 5550 4600
+F 0 "C4" H 5665 4646 50  0000 L CNN
+F 1 "C" H 5665 4555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal" H 5588 4450 50  0001 C CNN
+F 3 "~" H 5550 4600 50  0001 C CNN
+	1    5550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C3
+U 1 1 61570064
+P 5200 4600
+F 0 "C3" H 5315 4646 50  0000 L CNN
+F 1 "CP1" H 5315 4555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal" H 5200 4600 50  0001 C CNN
+F 3 "~" H 5200 4600 50  0001 C CNN
+	1    5200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 61570A54
+P 4100 4600
+F 0 "C2" H 4215 4646 50  0000 L CNN
+F 1 "C" H 4215 4555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal" H 4138 4450 50  0001 C CNN
+F 3 "~" H 4100 4600 50  0001 C CNN
+	1    4100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 61572775
+P 3750 4600
+F 0 "C1" H 3868 4646 50  0000 L CNN
+F 1 "CP" H 3868 4555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Axial_L10.0mm_D4.5mm_P15.00mm_Horizontal" H 3788 4450 50  0001 C CNN
+F 3 "~" H 3750 4600 50  0001 C CNN
+	1    3750 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4450 4100 4450
+Wire Wire Line
+	4350 4450 4100 4450
+Connection ~ 4100 4450
+Wire Wire Line
+	4950 4450 5200 4450
+Wire Wire Line
+	5550 4450 5200 4450
+Connection ~ 5200 4450
+Wire Wire Line
+	5200 4750 5550 4750
+$Comp
+L power:GND #PWR0106
+U 1 1 615804E7
+P 5550 4750
+F 0 "#PWR0106" H 5550 4500 50  0001 C CNN
+F 1 "GND" H 5555 4577 50  0000 C CNN
+F 2 "" H 5550 4750 50  0001 C CNN
+F 3 "" H 5550 4750 50  0001 C CNN
+	1    5550 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 4750
+$Comp
+L power:+5V #PWR0107
+U 1 1 61580B5F
+P 3750 4450
+F 0 "#PWR0107" H 3750 4300 50  0001 C CNN
+F 1 "+5V" H 3765 4623 50  0000 C CNN
+F 2 "" H 3750 4450 50  0001 C CNN
+F 3 "" H 3750 4450 50  0001 C CNN
+	1    3750 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 4450
+$Comp
+L power:VCC #PWR0108
+U 1 1 61581AE1
+P 5550 4450
+F 0 "#PWR0108" H 5550 4300 50  0001 C CNN
+F 1 "VCC" H 5565 4623 50  0000 C CNN
+F 2 "" H 5550 4450 50  0001 C CNN
+F 3 "" H 5550 4450 50  0001 C CNN
+	1    5550 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5550 4450
+Wire Wire Line
+	4100 4750 4100 4850
+Wire Wire Line
+	4100 4850 3750 4850
+Wire Wire Line
+	3750 4850 3750 4750
+$Comp
+L power:GNDD #PWR?
+U 1 1 6155592B
+P 3750 5000
+F 0 "#PWR?" H 3750 4750 50  0001 C CNN
+F 1 "GNDD" H 3754 4845 50  0000 C CNN
+F 2 "" H 3750 5000 50  0001 C CNN
+F 3 "" H 3750 5000 50  0001 C CNN
+	1    3750 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4850 3750 5000
+Connection ~ 3750 4850
 $EndSCHEMATC

@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_C_Plug P1
+L usb_kb-rescue:USB_C_Plug-Connector P1
 U 1 1 6152BA8E
 P 2100 3100
 F 0 "P1" H 2207 4367 50  0000 C CNN
@@ -25,12 +25,12 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2250 31
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power_Protection:USBLC6-2SC6 U2
+L usb_kb-rescue:USBLC6-2SC6-Power_Protection U2
 U 1 1 6153205F
 P 4550 2700
 F 0 "U2" H 4550 3381 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 4550 3290 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3800 3100 50  0001 C CNN
+F 1 "AMS1117-3.3" H 4550 3290 50  0000 C CNN
+F 2 "" H 3800 3100 50  0001 C CNN
 F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 4750 3050 50  0001 C CNN
 	1    4550 2700
 	0    -1   -1   0   
@@ -75,12 +75,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0101
 U 1 1 61544FD7
-P 2700 1800
-F 0 "#PWR0101" H 2700 1650 50  0001 C CNN
-F 1 "+5V" H 2715 1973 50  0000 C CNN
-F 2 "" H 2700 1800 50  0001 C CNN
-F 3 "" H 2700 1800 50  0001 C CNN
-	1    2700 1800
+P 2900 1300
+F 0 "#PWR0101" H 2900 1150 50  0001 C CNN
+F 1 "+5V" H 2915 1473 50  0000 C CNN
+F 2 "" H 2900 1300 50  0001 C CNN
+F 3 "" H 2900 1300 50  0001 C CNN
+	1    2900 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -98,8 +98,6 @@ Wire Wire Line
 	5050 2700 5100 2700
 Wire Wire Line
 	5100 2700 5100 2900
-Wire Wire Line
-	2700 1800 2700 2100
 $Comp
 L power:GNDD #PWR0103
 U 1 1 6154E00D
@@ -177,4 +175,175 @@ Wire Wire Line
 	9350 4250 9650 4250
 Wire Wire Line
 	9350 4350 9650 4350
+$Comp
+L Device:C C2
+U 1 1 61570A54
+P 4100 4700
+F 0 "C2" H 4215 4746 50  0000 L CNN
+F 1 "0.1uF" H 4215 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4138 4550 50  0001 C CNN
+F 3 "~" H 4100 4700 50  0001 C CNN
+	1    4100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 61580B5F
+P 3750 4300
+F 0 "#PWR0107" H 3750 4150 50  0001 C CNN
+F 1 "+5V" H 3765 4473 50  0000 C CNN
+F 2 "" H 3750 4300 50  0001 C CNN
+F 3 "" H 3750 4300 50  0001 C CNN
+	1    3750 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4850 4100 4950
+Wire Wire Line
+	4100 4950 3750 4950
+Wire Wire Line
+	3750 4950 3750 4850
+$Comp
+L power:GNDD #PWR01
+U 1 1 6155592B
+P 3750 5100
+F 0 "#PWR01" H 3750 4850 50  0001 C CNN
+F 1 "GNDD" H 3754 4945 50  0000 C CNN
+F 2 "" H 3750 5100 50  0001 C CNN
+F 3 "" H 3750 5100 50  0001 C CNN
+	1    3750 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4950 3750 5100
+Connection ~ 3750 4950
+$Comp
+L power:+3.3V #PWR03
+U 1 1 615606CF
+P 5550 4300
+F 0 "#PWR03" H 5550 4150 50  0001 C CNN
+F 1 "+3.3V" H 5565 4473 50  0000 C CNN
+F 2 "" H 5550 4300 50  0001 C CNN
+F 3 "" H 5550 4300 50  0001 C CNN
+	1    5550 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4450 5200 4450
+Wire Wire Line
+	4350 4450 4100 4450
+Wire Wire Line
+	3750 4450 3750 4550
+Wire Wire Line
+	3750 4300 3750 4450
+Connection ~ 3750 4450
+Wire Wire Line
+	4100 4550 4100 4450
+Connection ~ 4100 4450
+Wire Wire Line
+	4100 4450 3750 4450
+Wire Wire Line
+	5200 4550 5200 4450
+Connection ~ 5200 4450
+Wire Wire Line
+	5200 4450 5550 4450
+Wire Wire Line
+	5550 4550 5550 4450
+Wire Wire Line
+	5200 4850 5200 4950
+Wire Wire Line
+	5200 4950 5550 4950
+Wire Wire Line
+	5550 4950 5550 4850
+$Comp
+L power:GNDD #PWR02
+U 1 1 615895AD
+P 4650 5100
+F 0 "#PWR02" H 4650 4850 50  0001 C CNN
+F 1 "GNDD" H 4654 4945 50  0000 C CNN
+F 2 "" H 4650 5100 50  0001 C CNN
+F 3 "" H 4650 5100 50  0001 C CNN
+	1    4650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR04
+U 1 1 6158D0F6
+P 5550 5100
+F 0 "#PWR04" H 5550 4850 50  0001 C CNN
+F 1 "GNDD" H 5554 4945 50  0000 C CNN
+F 2 "" H 5550 5100 50  0001 C CNN
+F 3 "" H 5550 5100 50  0001 C CNN
+	1    5550 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4750 4650 5100
+Wire Wire Line
+	5550 4950 5550 5100
+Connection ~ 5550 4950
+$Comp
+L Device:C C1
+U 1 1 6159B622
+P 3750 4700
+F 0 "C1" H 3865 4746 50  0000 L CNN
+F 1 "1uF" H 3865 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3788 4550 50  0001 C CNN
+F 3 "~" H 3750 4700 50  0001 C CNN
+	1    3750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 615A45E7
+P 5550 4700
+F 0 "C4" H 5665 4746 50  0000 L CNN
+F 1 "0.1uF" H 5665 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5588 4550 50  0001 C CNN
+F 3 "~" H 5550 4700 50  0001 C CNN
+	1    5550 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 615A45ED
+P 5200 4700
+F 0 "C3" H 5315 4746 50  0000 L CNN
+F 1 "1uF" H 5315 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5238 4550 50  0001 C CNN
+F 3 "~" H 5200 4700 50  0001 C CNN
+	1    5200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4300 5550 4450
+Connection ~ 5550 4450
+$Comp
+L Regulator_Linear:AMS1117-3.3 U3
+U 1 1 615B256A
+P 4650 4450
+F 0 "U3" H 4650 4692 50  0000 C CNN
+F 1 "AMS1117-3.3" H 4650 4601 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4650 4650 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 4750 4200 50  0001 C CNN
+	1    4650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 615BE243
+P 2900 1650
+F 0 "D1" V 2854 1729 50  0000 L CNN
+F 1 "D_Schottky" V 2945 1729 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA" H 2900 1650 50  0001 C CNN
+F 3 "~" H 2900 1650 50  0001 C CNN
+	1    2900 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 2100 2900 2100
+Wire Wire Line
+	2900 2100 2900 1800
+Wire Wire Line
+	2900 1500 2900 1300
 $EndSCHEMATC

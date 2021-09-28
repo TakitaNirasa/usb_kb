@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name usb_kb-rescue)(type Legacy)(uri ${KIPRJMOD}/usb_kb-rescue.lib)(options "")(descr ""))
+)
