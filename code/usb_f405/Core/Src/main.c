@@ -60,16 +60,16 @@ typedef struct
 
 uint8_t keyBoardHIDsub[] = {0,0,0,0,0,0,0,0};
 /* USER CODE END PV */
-void send_word(uint8_t num, uint8_t shift)
+void send_word(uint8_t num, uint8_t ctrl)
 {
-	if (shift)
+	if (ctrl)
 	{
-	  keyBoardHIDsub[0]=0x02;  // To press shift key<br>
+	  keyBoardHIDsub[0]=0x01;  // To press shift key<br>
 	}
 	  keyBoardHIDsub[2]=num;  // Press  key
 	  USBD_HID_SendReport(&hUsbDeviceFS,keyBoardHIDsub,sizeof(keyBoardHIDsub));
 	  HAL_Delay(50); 		       // Press all key for 50 milliseconds
-	  keyBoardHIDsub[0]=0x00;  // To unpress shift key<br>
+	  keyBoardHIDsub[0]=0x00;  // To unpress ctrl key<br>
 	  keyBoardHIDsub[2]=0x00;  // unPress key
 	  USBD_HID_SendReport(&hUsbDeviceFS,keyBoardHIDsub,sizeof(keyBoardHIDsub));
 	  HAL_Delay(400); 	       // Repeat this task on every 1 second
@@ -85,7 +85,11 @@ static void MX_GPIO_Init(void);
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
-
+typedef enum pos_button_e
+{
+	  button_push,
+	  button_free
+}pos_button_t;
 /**
   * @brief  The application entry point.
   * @retval int
@@ -118,21 +122,37 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
+  pos_button_t button_position = HAL_GPIO_ReadPin(GPIOA, 0) ? button_push : button_free;
+  uint8_t was_done_copy = 0;
+  uint8_t counter;
+
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	HAL_Delay(1000); 	       // Repeat this task on every 1 second
-	send_word(0x13, 1);
-	send_word(0x12, 0);
-	send_word(0x16, 0);
-	send_word(0x12, 0);
-	send_word(0x16, 0);
-	send_word(0x0c, 0);
-	send_word(0x1e, 1);
-	send_word(0x28, 0);
-	HAL_Delay(1000); 	       // Repeat this task on every 1 second
+	  if (button_position == button_push && counter > 10)
+	 	  counter = (GPIOA->IDR & 1) ? 255 : counter - 1;
+	   else if (button_position == button_free && counter < 240)
+	   	  counter = (GPIOA->IDR & 1) ? 0 : counter + 1;
+	   else if (button_position == button_push && counter <= 10)
+	   {
+	 	  	  button_position = button_free;
+	 	  	  counter = 0;
+	 	  	  // Если уже нажали ctrl+c, то жмём ctrl+v
+	 	  	  if (was_done_copy)
+	 	  		  send_word(0x19, 1);
+	 	  	  else
+	 	  		  send_word(0x06, 1);
+	 	  	  //меняем значение
+	 	  	  was_done_copy ^= 1;
+
+	   }
+	   else if (button_position == button_free && counter >= 240)
+	   {
+	 	  	  button_position = button_push;
+	 	  	  counter = 255;
+	   }	       // Repeat this task on every 1 second
   }
   /* USER CODE END 3 */
 }
@@ -206,6 +226,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
+  GPIO_InitTypeDef GPIO_InitStruct_PA0 = {0};
+  GPIO_InitStruct.Pin = GPIO_PIN_0;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct_PA0);
 }
 
 /* USER CODE BEGIN 4 */
