@@ -1,5 +1,6 @@
 # usb_kb
 Two switch keyboard
+Currently in develop
 
 [Схемы](https://github.com/TakitaNirasa/usb_kb/tree/main/sch_pcb)
 
