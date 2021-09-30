@@ -1,0 +1,88 @@
+Информация: Обработка компонента "J1:/615DD6C5:Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical".
+Информация: Обработка компонента "C14:/61573A60:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "R14:/616A5D0F:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "C15:/61594438:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "R13:/615C8D27:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "D1:/615BE243:Diode_SMD:D_SMA".
+Информация: Обработка компонента "R12:/61584F00:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "D2:/6157EF82:Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "R11:/61567374:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "D3:/615BC87B:Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "R10:/61563424:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "D4:/615B3C03:Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "R9:/615BC881:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "R15:/616A4701:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "R8:/615B3C09:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "JP1:/615515A1:Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm".
+Информация: Обработка компонента "R7:/615819F2:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "JP2:/61571C30:Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm".
+Информация: Обработка компонента "R6:/6176BF06:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "P1:/6152BA8E:Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12".
+Информация: Обработка компонента "R5:/61687768:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "R1:/6155C064:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "R4:/615A1C71:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "R2:/6155F9D5:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "R3:/6163586F:Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder".
+Информация: Обработка компонента "C13:/616EB914:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "C1:/6159B622:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "C2:/61570A54:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "X1:/615A0FA7:Crystal:Crystal_HC49-4H_Vertical".
+Информация: Обработка компонента "C3:/615A45ED:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "C4:/615A45E7:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "U3:/615B256A:Package_TO_SOT_SMD:SOT-223-3_TabPin2".
+Информация: Обработка компонента "C5:/61610E10:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "C6:/61612EA3:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "U2:/61609EAF:Package_TO_SOT_SMD:SOT-23-6".
+Информация: Обработка компонента "C7:/61613FDA:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "C8:/616148F3:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "U1:/6153426E:Package_QFP:LQFP-48_7x7mm_P0.5mm".
+Информация: Обработка компонента "C9:/615BF44D:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "C10:/615BE780:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "SW2:/615AD94E:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB".
+Информация: Обработка компонента "C11:/61631C3A:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "C12:/616EB91A:Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder".
+Информация: Обработка компонента "SW1:/6155A06F:Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB".
+Добавлено U1 (посад.место "Package_QFP:LQFP-48_7x7mm_P0.5mm").
+Добавлено SW2 (посад.место "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB").
+Добавлено U2 (посад.место "Package_TO_SOT_SMD:SOT-23-6").
+Добавлено U3 (посад.место "Package_TO_SOT_SMD:SOT-223-3_TabPin2").
+Добавлено SW1 (посад.место "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB").
+Добавлено X1 (посад.место "Crystal:Crystal_HC49-4H_Vertical").
+Добавлено P1 (посад.место "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12").
+Добавлено JP2 (посад.место "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm").
+Добавлено D1 (посад.место "Diode_SMD:D_SMA").
+Добавлено JP1 (посад.место "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm").
+Добавлено J1 (посад.место "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical").
+Добавлено D2 (посад.место "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder").
+Добавлено D4 (посад.место "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder").
+Добавлено D3 (посад.место "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder").
+Ошибка: Не удалось добавить C7 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C13 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R15 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C12 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C11 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C10 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C9 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C8 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R12 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C6 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C5 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C4 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C3 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C2 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C1 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R14 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C14 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R13 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить C15 (посад.место "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R2 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R11 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R10 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R9 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R8 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R7 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R6 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R5 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R4 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R1 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).
+Ошибка: Не удалось добавить R3 (посад.место "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" не найдено).

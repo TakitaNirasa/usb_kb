@@ -883,10 +883,10 @@ F 3 "~" H 7300 4100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R8
+L Device:R R9
 U 1 1 615BC881
 P 7800 4100
-F 0 "R8" V 8007 4100 50  0000 C CNN
+F 0 "R9" V 8007 4100 50  0000 C CNN
 F 1 "510" V 7916 4100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7730 4100 50  0001 C CNN
 F 3 "~" H 7800 4100 50  0001 C CNN
@@ -935,10 +935,10 @@ F 3 "~" H 10700 1850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R9
+L Device:R R10
 U 1 1 61563424
 P 10350 1200
-F 0 "R9" V 10557 1200 50  0000 C CNN
+F 0 "R10" V 10557 1200 50  0000 C CNN
 F 1 "100" V 10466 1200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10280 1200 50  0001 C CNN
 F 3 "~" H 10350 1200 50  0001 C CNN
@@ -946,10 +946,10 @@ F 3 "~" H 10350 1200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R10
+L Device:R R11
 U 1 1 61567374
 P 10700 2200
-F 0 "R10" V 10907 2200 50  0000 C CNN
+F 0 "R11" V 10907 2200 50  0000 C CNN
 F 1 "10k" V 10816 2200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10630 2200 50  0001 C CNN
 F 3 "~" H 10700 2200 50  0001 C CNN
@@ -1020,10 +1020,6 @@ Wire Wire Line
 Connection ~ 10350 1950
 Text Label 9900 1950 0    50   ~ 0
 Button1
-Text Label 9850 3350 0    50   ~ 0
-Button2
-Wire Wire Line
-	9850 3350 9600 3350
 $Comp
 L Device:LED_ALT D4
 U 1 1 615B3C03
@@ -1036,10 +1032,10 @@ F 3 "~" H 7300 3600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R11
+L Device:R R8
 U 1 1 615B3C09
 P 7800 3600
-F 0 "R11" V 8007 3600 50  0000 C CNN
+F 0 "R8" V 8007 3600 50  0000 C CNN
 F 1 "510" V 7916 3600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7730 3600 50  0001 C CNN
 F 3 "~" H 7800 3600 50  0001 C CNN
@@ -1069,21 +1065,6 @@ Wire Wire Line
 	7950 3600 8150 3600
 Wire Wire Line
 	7950 3250 8300 3250
-Text Notes 9850 3450 0    50   ~ 0
-Сюда повторить кнопку, которая сверху
-$Comp
-L Connector:Conn_01x04_Female J1
-U 1 1 615DD6C5
-P 5150 5550
-F 0 "J1" H 5042 5835 50  0000 C CNN
-F 1 "Conn_01x04_Female" H 5042 5744 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5150 5550 50  0001 C CNN
-F 3 "~" H 5150 5550 50  0001 C CNN
-	1    5150 5550
-	-1   0    0    -1  
-$EndComp
-Text Notes 4750 5200 0    50   ~ 0
-Разъём программирования
 Text Notes 1750 950  0    50   ~ 0
 НЕ МЕНЯЙ ЭЛЕМЕНТЫ НА 0603 В КОТОРЫХ НЕ УВЕРЕН!!!
 $Comp
@@ -1109,4 +1090,218 @@ Wire Wire Line
 	4450 3100 4450 3350
 Wire Wire Line
 	3800 2700 4150 2700
+$Comp
+L Switch:SW_Push SW2
+U 1 1 615AD94E
+P 10700 3300
+F 0 "SW2" V 10654 3448 50  0000 L CNN
+F 1 "SW_Push" V 10745 3448 50  0000 L CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 10700 3500 50  0001 C CNN
+F 3 "~" H 10700 3500 50  0001 C CNN
+	1    10700 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 615C8D27
+P 10700 4250
+F 0 "R13" V 10907 4250 50  0000 C CNN
+F 1 "10k" V 10816 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10630 4250 50  0001 C CNN
+F 3 "~" H 10700 4250 50  0001 C CNN
+	1    10700 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDD #PWR031
+U 1 1 615C8D2D
+P 10700 4550
+F 0 "#PWR031" H 10700 4300 50  0001 C CNN
+F 1 "GNDD" H 10704 4395 50  0000 C CNN
+F 2 "" H 10700 4550 50  0001 C CNN
+F 3 "" H 10700 4550 50  0001 C CNN
+	1    10700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 4550 10700 4400
+$Comp
+L power:+3.3V #PWR030
+U 1 1 61704C01
+P 10700 2950
+F 0 "#PWR030" H 10700 2800 50  0001 C CNN
+F 1 "+3.3V" H 10715 3123 50  0000 C CNN
+F 2 "" H 10700 2950 50  0001 C CNN
+F 3 "" H 10700 2950 50  0001 C CNN
+	1    10700 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3100 10700 3050
+$Comp
+L Device:R R12
+U 1 1 61584F00
+P 10200 3350
+F 0 "R12" V 10407 3350 50  0000 C CNN
+F 1 "100" V 10316 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10130 3350 50  0001 C CNN
+F 3 "~" H 10200 3350 50  0001 C CNN
+	1    10200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 61594438
+P 10200 3750
+F 0 "C15" V 9948 3750 50  0000 C CNN
+F 1 "0.1uF" V 10039 3750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10238 3600 50  0001 C CNN
+F 3 "~" H 10200 3750 50  0001 C CNN
+	1    10200 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 3350 9600 3350
+Wire Wire Line
+	10200 3200 10200 3050
+Wire Wire Line
+	10200 3050 10700 3050
+Connection ~ 10700 3050
+Wire Wire Line
+	10700 3050 10700 2950
+Wire Wire Line
+	10700 3500 10700 3750
+Wire Wire Line
+	10450 4000 10450 3750
+Wire Wire Line
+	10450 3750 10700 3750
+Wire Wire Line
+	10000 4000 10200 4000
+Wire Wire Line
+	10000 4000 10000 3350
+Connection ~ 10700 3750
+Wire Wire Line
+	10700 3750 10700 4100
+Wire Wire Line
+	10200 3900 10200 4000
+Connection ~ 10200 4000
+Wire Wire Line
+	10200 4000 10450 4000
+Wire Wire Line
+	10200 3500 10200 3600
+Wire Wire Line
+	7050 5950 7150 5950
+Wire Wire Line
+	7150 5950 7150 6100
+$Comp
+L power:GNDD #PWR028
+U 1 1 615C7D1A
+P 7150 6100
+F 0 "#PWR028" H 7150 5850 50  0001 C CNN
+F 1 "GNDD" H 7154 5945 50  0000 C CNN
+F 2 "" H 7150 6100 50  0001 C CNN
+F 3 "" H 7150 6100 50  0001 C CNN
+	1    7150 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 5650 7250 5650
+$Comp
+L power:+3.3V #PWR029
+U 1 1 615B9365
+P 7250 5650
+F 0 "#PWR029" H 7250 5500 50  0001 C CNN
+F 1 "+3.3V" V 7265 5778 50  0000 L CNN
+F 2 "" H 7250 5650 50  0001 C CNN
+F 3 "" H 7250 5650 50  0001 C CNN
+	1    7250 5650
+	0    1    1    0   
+$EndComp
+Text Notes 6450 5400 0    50   ~ 0
+Разъём программирования
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 615DD6C5
+P 6850 5750
+F 0 "J1" H 6742 6035 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 6742 5944 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6850 5750 50  0001 C CNN
+F 3 "~" H 6850 5750 50  0001 C CNN
+	1    6850 5750
+	-1   0    0    -1  
+$EndComp
+Text Label 7900 5750 0    50   ~ 0
+SWDIO
+Wire Wire Line
+	7050 5750 7800 5750
+Text Label 10000 4550 0    50   ~ 0
+SWDIO
+Wire Wire Line
+	9600 4550 10000 4550
+Text Label 7450 5850 0    50   ~ 0
+SWCLK
+Wire Wire Line
+	7050 5850 7400 5850
+Text Label 10000 4650 0    50   ~ 0
+SWCLK
+Wire Wire Line
+	9600 4650 10000 4650
+$Comp
+L Device:R R15
+U 1 1 616A4701
+P 7800 5950
+F 0 "R15" H 7870 5996 50  0000 L CNN
+F 1 "10k" H 7870 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7730 5950 50  0001 C CNN
+F 3 "~" H 7800 5950 50  0001 C CNN
+	1    7800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 616A5D0F
+P 7400 6050
+F 0 "R14" H 7470 6096 50  0000 L CNN
+F 1 "10k" H 7470 6005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7330 6050 50  0001 C CNN
+F 3 "~" H 7400 6050 50  0001 C CNN
+	1    7400 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0104
+U 1 1 616B3CB3
+P 7800 6150
+F 0 "#PWR0104" H 7800 5900 50  0001 C CNN
+F 1 "GNDD" H 7804 5995 50  0000 C CNN
+F 2 "" H 7800 6150 50  0001 C CNN
+F 3 "" H 7800 6150 50  0001 C CNN
+	1    7800 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 6100 7800 6150
+Wire Wire Line
+	7800 5800 7800 5750
+Connection ~ 7800 5750
+Wire Wire Line
+	7800 5750 7900 5750
+Wire Wire Line
+	7400 5850 7400 5900
+Connection ~ 7400 5850
+Wire Wire Line
+	7400 5850 7450 5850
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 616C9CD5
+P 7400 6300
+F 0 "#PWR0105" H 7400 6150 50  0001 C CNN
+F 1 "+3.3V" H 7415 6473 50  0000 C CNN
+F 2 "" H 7400 6300 50  0001 C CNN
+F 3 "" H 7400 6300 50  0001 C CNN
+	1    7400 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7400 6200 7400 6300
 $EndSCHEMATC
