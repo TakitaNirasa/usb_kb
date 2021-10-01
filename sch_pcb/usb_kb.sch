@@ -228,47 +228,36 @@ F 3 "~" H 2900 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2100 5500 2100 5650
-Connection ~ 2100 5500
+	2100 4400 2100 4550
+Connection ~ 2100 4400
 Wire Wire Line
-	1800 5500 2100 5500
+	1800 4400 2100 4400
 Wire Wire Line
-	1800 5500 1800 5350
+	1800 4400 1800 4250
 Wire Wire Line
-	2100 4700 2100 5500
+	2100 3600 2100 4400
 Wire Wire Line
-	1800 4700 1800 4750
+	1800 3600 1800 3650
 $Comp
 L Device:Jumper JP1
 U 1 1 615515A1
-P 1800 5050
-F 0 "JP1" V 1846 4962 50  0000 R CNN
-F 1 "Jumper" V 1755 4962 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1800 5050 50  0001 C CNN
-F 3 "~" H 1800 5050 50  0001 C CNN
-	1    1800 5050
+P 1800 3950
+F 0 "JP1" V 1846 3862 50  0000 R CNN
+F 1 "Jumper" V 1755 3862 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1800 3950 50  0001 C CNN
+F 3 "~" H 1800 3950 50  0001 C CNN
+	1    1800 3950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GNDD #PWR0103
 U 1 1 6154E00D
-P 2100 5650
-F 0 "#PWR0103" H 2100 5400 50  0001 C CNN
-F 1 "GNDD" H 2104 5495 50  0000 C CNN
-F 2 "" H 2100 5650 50  0001 C CNN
-F 3 "" H 2100 5650 50  0001 C CNN
-	1    2100 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L usb_kb-rescue:USB_C_Plug-Connector P1
-U 1 1 6152BA8E
-P 2100 3100
-F 0 "P1" H 2207 4367 50  0000 C CNN
-F 1 "USB_C_Plug" H 2207 4276 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 2250 3100 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2250 3100 50  0001 C CNN
-	1    2100 3100
+P 2100 4550
+F 0 "#PWR0103" H 2100 4300 50  0001 C CNN
+F 1 "GNDD" H 2104 4395 50  0000 C CNN
+F 2 "" H 2100 4550 50  0001 C CNN
+F 3 "" H 2100 4550 50  0001 C CNN
+	1    2100 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1304,4 +1293,15 @@ F 3 "" H 7400 6300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7400 6200 7400 6300
+$Comp
+L Connector:USB_C_Plug_USB2.0 P1
+U 1 1 6159C626
+P 2100 2700
+F 0 "P1" H 2207 3567 50  0000 C CNN
+F 1 "USB_C_Plug_USB2.0" H 2207 3476 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 2250 2700 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2250 2700 50  0001 C CNN
+	1    2100 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
