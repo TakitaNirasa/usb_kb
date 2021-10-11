@@ -13,10 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	4450 3350 4650 3350
-Wire Wire Line
-	4450 2050 4650 2050
 $Comp
 L power:+5V #PWR0101
 U 1 1 61544FD7
@@ -39,8 +35,6 @@ F 3 "" H 5100 2900 50  0001 C CNN
 	1    5100 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 2700 5100 2900
 $Comp
 L Device:R R1
 U 1 1 6155C064
@@ -63,12 +57,10 @@ F 3 "~" H 3550 3350 50  0001 C CNN
 	1    3550 3350
 	0    1    1    0   
 $EndComp
-Connection ~ 4650 3350
-Connection ~ 4650 2050
 Text Label 5550 2050 0    50   ~ 0
-USB_D-
+USB_N
 Text Label 5550 3350 0    50   ~ 0
-USB_D+
+USB_P
 $Comp
 L Device:C C2
 U 1 1 61570A54
@@ -323,9 +315,9 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 Text Label 9900 4350 0    50   ~ 0
-USB_D-
+USB_N
 Text Label 9900 4450 0    50   ~ 0
-USB_D+
+USB_P
 Wire Wire Line
 	9600 4350 9900 4350
 Wire Wire Line
@@ -598,24 +590,9 @@ Wire Wire Line
 	3200 3350 3400 3350
 Wire Wire Line
 	3700 3350 3800 3350
-Connection ~ 4450 3350
 Wire Wire Line
 	3800 3200 3800 3350
 Connection ~ 3800 3350
-Wire Wire Line
-	3800 3350 4450 3350
-Wire Wire Line
-	3800 2700 3800 2900
-Wire Wire Line
-	3800 2700 3800 2500
-Connection ~ 3800 2700
-Wire Wire Line
-	3700 2050 4450 2050
-Connection ~ 4450 2050
-Wire Wire Line
-	4650 3350 5300 3350
-Wire Wire Line
-	4650 2050 5300 2050
 $Comp
 L Device:C C13
 U 1 1 616EB914
@@ -874,18 +851,6 @@ F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 4750 3050 50  0001
 	1    4550 2700
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4450 2050 4450 2300
-Wire Wire Line
-	4650 2050 4650 2300
-Wire Wire Line
-	4950 2700 5100 2700
-Wire Wire Line
-	4650 3100 4650 3350
-Wire Wire Line
-	4450 3100 4450 3350
-Wire Wire Line
-	3800 2700 4150 2700
 $Comp
 L Switch:SW_Push SW2
 U 1 1 615AD94E
@@ -1100,6 +1065,10 @@ F 3 "" H 7400 6300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7400 6200 7400 6300
+Text Label 2850 2600 0    50   ~ 0
+D_N
+Text Label 2850 2800 0    50   ~ 0
+D_P
 $Comp
 L Connector:USB_C_Plug_USB2.0 P1
 U 1 1 6159C626
@@ -1111,4 +1080,39 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2250 27
 	1    2100 2700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3800 2500 3800 2700
+Wire Wire Line
+	3800 3350 4450 3350
+Wire Wire Line
+	3700 2050 4450 2050
+Wire Wire Line
+	4450 2200 4450 2050
+Connection ~ 4450 2050
+Wire Wire Line
+	4450 2050 4650 2050
+Wire Wire Line
+	4650 2200 4650 2050
+Connection ~ 4650 2050
+Wire Wire Line
+	4650 2050 5300 2050
+Wire Wire Line
+	4050 2700 3800 2700
+Connection ~ 3800 2700
+Wire Wire Line
+	3800 2700 3800 2900
+Wire Wire Line
+	5050 2700 5100 2700
+Wire Wire Line
+	5100 2700 5100 2900
+Wire Wire Line
+	4450 3200 4450 3350
+Connection ~ 4450 3350
+Wire Wire Line
+	4450 3350 4650 3350
+Wire Wire Line
+	4650 3200 4650 3350
+Connection ~ 4650 3350
+Wire Wire Line
+	4650 3350 5300 3350
 $EndSCHEMATC
