@@ -1,11 +1,13 @@
 # Двухкнопочная клавиатура
 
 
-[Схемы](https://github.com/TakitaNirasa/usb_kb/tree/main/sch_pcb)
+[Проект печатной платы](https://github.com/TakitaNirasa/usb_kb/tree/main/sch_pcb)
 
 [3D модели](https://github.com/TakitaNirasa/usb_kb/tree/main/3d_models%26drawings)
 
-[Код](https://github.com/TakitaNirasa/usb_kb/tree/main/code/usb_kb_103) 
+[Код](https://github.com/TakitaNirasa/usb_kb/tree/main/code/usb_kb_103)
+
+[Схема](https://github.com/TakitaNirasa/usb_kb/tree/main/sch_pcb/usb_kb.pdf)
 
 
 Для сборки проекта:
